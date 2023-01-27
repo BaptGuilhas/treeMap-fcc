@@ -1,0 +1,66 @@
+:root {
+    --var-primary: rgb(158, 144, 167);
+    --var-lighted: rgb(191, 174, 202);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .titles {
+    text-align: center;
+  }
+  #chart {
+    margin: 0 auto;
+  }
+  #svgChart {
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0 0 15px black;
+    overflow: visible;
+    margin-top: 30px;
+  }
+
+  .tile {
+  border: 3px solid white;
+}
+
+.legendText {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+#legend {
+z-index: 2;
+position: absolute;
+left: 50%;
+transform: translate(-50%, 0%);
+bottom : 30px;
+border-radius: 2;
+box-shadow: 1px 1px 10px;
+font-size: 1em;
+}
+
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.8em;
+  box-shadow: 1px 1px 1px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  height: auto;
+  width: fit-content;
+  background-color: blanchedalmond;
+}
